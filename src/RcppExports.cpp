@@ -153,12 +153,12 @@ BEGIN_RCPP
 END_RCPP
 }
 // do_gappy_index
-IntegerVector do_gappy_index(IntegerVector starts, IntegerVector offset, IntegerVector length);
+NumericVector do_gappy_index(NumericVector starts, IntegerVector offset, IntegerVector length);
 RcppExport SEXP _oce_do_gappy_index(SEXP startsSEXP, SEXP offsetSEXP, SEXP lengthSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< IntegerVector >::type starts(startsSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type starts(startsSEXP);
     Rcpp::traits::input_parameter< IntegerVector >::type offset(offsetSEXP);
     Rcpp::traits::input_parameter< IntegerVector >::type length(lengthSEXP);
     rcpp_result_gen = Rcpp::wrap(do_gappy_index(starts, offset, length));
